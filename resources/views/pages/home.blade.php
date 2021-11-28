@@ -277,120 +277,162 @@
             <div data-aos="zoom-in-up" class="product">
                 <div class="container">
 
-                <div class="card">
-                    <div class="imgbx">
-                    <img src="../IMG/adobe-photoshop.png" alt="">
+                <form action="{{ route('home-store') }}" method="POST" enctype="multipart/form-data">
+                    @csrf
+                    <div class="card">
+                        <div class="imgbx">
+                            <img src="../IMG/adobe-photoshop.png" alt="">
+                        </div>
+                        <div class="contentbx">
+                                        
+                            <h2>Photoshop</h2>
+                            <input type="hidden" id="product" name="product" value="Photoshop">
+                            <div class="level">
+                                <label for="level">LEVEL :  </label>
+                                <select class="form-control" name="level" id="level">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>
+                            <div class="price">
+                                <h3>Rp150.000 </h3>
+                            </div>
+                            <input type="hidden" id="price" name="price" value="150000">
+                            <button type="submit">Buy Now</button>
+                        </div>
                     </div>
-                    <div class="contentbx">
-                    <h2>Photoshop</h2>
-                    <div class="level">
-                        <h3>Level : </h3>
-                        <span>1</span>
-                        <span>2</span>
-                        <span>3</span>
-                    </div>
-                    <div class="price">
-                        <h3>Rp150.000 </h3>
-                    </div>
-                    <!-- <button class="btn btn-danger my-cart-btn" data-id="1" data-name="product 1" data-summary="summary 1" data-price="10" data-quantity="1" data-image="../IMG/adobe-illustrator.png">Buy Now</button> -->
-                    <a href="#">Buy Now</a>
-                    </div>
-                </div>
+                </form>
 
-                <div class="card">
-                    <div class="imgbx">
-                    <img src="../IMG/adobe-illustrator.png" alt="">
+                <form action="{{ route('home-store') }}" method="POST" enctype="multipart/form-data">
+                    @csrf
+                    <div class="card">
+                        <div class="imgbx">
+                            <img src="../IMG/adobe-illustrator.png" alt="">
+                        </div>
+                        <div class="contentbx">
+                            <h2>Illustrator</h2>
+                            <input type="hidden" id="product" name="product" value="Illustrator">
+                            <div class="level">
+                                <label for="level">LEVEL :  </label>
+                                <select class="form-control" name="level" id="level">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>
+                            <div class="price">
+                                <h3>Rp150.000</h3>
+                            </div>
+                            <input type="hidden" id="price" name="price" value="150000">
+                            <button type="submit">Buy Now</button>
+                        </div>
                     </div>
-                    <div class="contentbx">
-                    <h2>Illustrator</h2>
-                    <div class="level">
-                        <h3>Level : </h3>
-                        <span>1</span>
-                        <span>2</span>
-                        <span>3</span>
-                    </div>
-                    <div class="price">
-                        <h3>Rp150.000</h3>
-                    </div>
-                    <a href="#">Buy Now</a>
-                    </div>
-                </div>
+                </form>
 
-                <div class="card">
-                    <div class="imgbx">
-                    <img src="../IMG/premiere.png" alt="">
+                <form action="{{ route('home-store') }}" method="POST" enctype="multipart/form-data">
+                @csrf
+                    <div class="card">
+                        <div class="imgbx">
+                            <img src="../IMG/premiere.png" alt="">
+                        </div>
+                        <div class="contentbx">
+                            <h2>Premiere</h2>
+                            <input type="hidden" id="product" name="product" value="Premiere">
+                            <div class="level">
+                                <label for="level">LEVEL :  </label>
+                                <select class="form-control ml-1" name="level" id="level">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>
+                            <div class="price">
+                                <h3>Rp150.000</h3>
+                            </div>
+                            <input type="hidden" id="price" name="price" value="150000">
+                            <button type="submit">Buy Now</button>
+                        </div>
                     </div>
-                    <div class="contentbx">
-                    <h2>Premiere</h2>
-                    <div class="level">
-                        <h3>Level : </h3>
-                        <span>1</span>
-                        <span>2</span>
-                        <span>3</span>
-                    </div>
-                    <div class="price">
-                        <h3>Rp150.000</h3>
-                    </div>
-                    <a href="#">Buy Now</a>
-                    </div>
-                </div>
+                </form>
 
-                <div class="card">
-                    <div class="imgbx">
-                    <img src="../IMG/adobe-lightroom.png" alt="">
+                <form action="{{ route('home-store') }}" method="POST" enctype="multipart/form-data">
+                @csrf
+                    <div class="card">
+                        <div class="imgbx">
+                            <img src="../IMG/adobe-lightroom.png" alt="">
+                        </div>
+                        <div class="contentbx">
+                            <h2>Lightroom</h2>
+                            <input type="hidden" id="product" name="product" value="Lightroom">
+                            <div class="level">
+                                <label for="level">LEVEL :  </label>
+                                <select class="form-control ml-1" name="level" id="level">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>
+                            <div class="price">
+                                <h3>Rp150.000</h3>
+                            </div>
+                            <input type="hidden" id="price" name="price" value="150000">
+                            <button type="submit">Buy Now</button>
+                        </div>
                     </div>
-                    <div class="contentbx">
-                    <h2>Lightroom</h2>
-                    <div class="level">
-                        <h3>Level : </h3>
-                        <span>1</span>
-                        <span>2</span>
-                        <span>3</span>
-                    </div>
-                    <div class="price">
-                        <h3>Rp150.000</h3>
-                    </div>
-                    <a href="#">Buy Now</a>
-                    </div>
-                </div>
+                </form>
 
-                <div class="card">
-                    <div class="imgbx">
-                    <img src="../IMG/after-effects.png" alt="">
+                <form action="{{ route('home-store') }}" method="POST" enctype="multipart/form-data">
+                @csrf
+                    <div class="card">
+                        <div class="imgbx">
+                            <img src="../IMG/after-effects.png" alt="">
+                        </div>
+                        <div class="contentbx">
+                            <h2>After Effects</h2>
+                            <input type="hidden" id="product" name="product" value="After Effects">
+                            <div class="level">
+                                <label for="level">LEVEL :  </label>
+                                <select class="form-control ml-1" name="level" id="level">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>
+                            <div class="price">
+                                <h3>Rp150.000</h3>
+                            </div>
+                            <input type="hidden" id="price" name="price" value="150000">
+                            <button type="submit">Buy Now</button>
+                        </div>
                     </div>
-                    <div class="contentbx">
-                    <h2>After Effects</h2>
-                    <div class="level">
-                        <h3>Level : </h3>
-                        <span>1</span>
-                        <span>2</span>
-                        <span>3</span>
-                    </div>
-                    <div class="price">
-                        <h3>Rp150.000</h3>
-                    </div>
-                    <a href="#">Buy Now</a>
-                    </div>
-                </div>
+                </form>
 
-                <div class="card">
-                    <div class="imgbx">
-                    <img src="../IMG/indesign.png" alt="">
+                <form action="{{ route('home-store') }}" method="POST" enctype="multipart/form-data">
+                @csrf
+                    <div class="card">
+                        <div class="imgbx">
+                            <img src="../IMG/indesign.png" alt="">
+                        </div>
+                        <div class="contentbx">
+                            <h2>InDesign</h2>
+                            <input type="hidden" id="product" name="product" value="InDesign">
+                            <div class="level">
+                                <label for="level">LEVEL :  </label>
+                                <select class="form-control ml-1" name="level" id="level">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>
+                            <div class="price">
+                                <h3>Rp150.000</h3>
+                            </div>
+                            <input type="hidden" id="price" name="price" value="150000">
+                            <button type="submit">Buy Now</button>
+                        </div>
                     </div>
-                    <div class="contentbx">
-                    <h2>InDesign</h2>
-                    <div class="level">
-                        <h3>Level : </h3>
-                        <span>1</span>
-                        <span>2</span>
-                        <span>3</span>
-                    </div>
-                    <div class="price">
-                        <h3>Rp150.000</h3>
-                    </div>
-                    <a href="#">Buy Now</a>
-                    </div>
-                </div>
+                </form>
 
                 </div>
             </div>
@@ -438,9 +480,15 @@
                         </div>
                         <div class="code">Kode Promo : BUNDLE </div>
                         <div class="card-inner-btn">
-                        <button>
-                            <span>Buy Now</span>
-                        </button>
+                        <form action="{{ route('home-store') }}" method="POST" enctype="multipart/form-data">
+                        @csrf
+                            <input type="hidden" id="product" name="product" value="Bundle Edition">
+                            <input type="hidden" id="product" name="level" value="0">
+                            <input type="hidden" id="price" name="price" value="300000">
+                            <button type="submit">
+                                <span>Buy Now</span>
+                            </button>
+                        </form>
                         </div>
                     </div>
                     </div>
@@ -478,9 +526,15 @@
                         </div>
                         <div class="code">Kode Promo : BEST </div>
                         <div class="card-inner-btn">
-                        <button>
-                            <span>Buy Now</span>
-                        </button>
+                        <form action="{{ route('home-store') }}" method="POST" enctype="multipart/form-data">
+                        @csrf
+                            <input type="hidden" id="product" name="product" value="Best Seller Edition">
+                            <input type="hidden" id="product" name="level" value="0">
+                            <input type="hidden" id="price" name="price" value="250000">
+                            <button type="submit">
+                                <span>Buy Now</span>
+                            </button>
+                        </form>
                         </div>
                     </div>
                     </div>
@@ -518,9 +572,15 @@
                         </div>
                         <div class="code">Kode Promo : PERSONAL </div>
                         <div class="card-inner-btn">
-                        <button>
-                            <span>Buy Now</span>
-                        </button>
+                        <form action="{{ route('home-store') }}" method="POST" enctype="multipart/form-data">
+                        @csrf
+                            <input type="hidden" id="product" name="product" value="Personal Edition">
+                            <input type="hidden" id="product" name="level" value="0">
+                            <input type="hidden" id="price" name="price" value="75000">
+                            <button type="submit">
+                                <span>Buy Now</span>
+                            </button>
+                        </form>
                         </div>
                     </div>
                     </div>

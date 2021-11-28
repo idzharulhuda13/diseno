@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\CartController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,9 +15,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('pages.home');
-})->name('home');
+Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::post('/home-store', [HomeController::class, 'store'])->name('home-store');
 Route::get('/faq', function () {
     return view('pages.FAQ');
 })->name('faq');
@@ -28,6 +29,8 @@ Route::get('/teams', function () {
 Route::get('/about', function () {
     return view('pages.About');
 })->name('about');
+Route::get('/cart', [CartController::class, 'index'])->name('cart');
+Route::get('/cart/{id}', [CartController::class, 'destroy'])->name('cart-destroy');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
